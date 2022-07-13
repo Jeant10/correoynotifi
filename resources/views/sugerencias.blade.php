@@ -68,8 +68,6 @@
     <main>
         <div class="container mt-5 col-12 col-sm-6">
             <p class="text text-center h2">Formulario de quejas, novedades o sugerencias</p>
-
-
             <form method="POST" action="{{route('sugerencias.form')}}">
                 @csrf
                 <div class="mb-3">
