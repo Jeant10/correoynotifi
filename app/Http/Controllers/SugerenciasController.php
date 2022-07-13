@@ -27,7 +27,7 @@ class SugerenciasController extends Controller
             'mensaje.min'=>'El :attribute debe tener mas de 5 caracteres'
         ]);
 
-        foreach (['jeantituana@hotmail.com', 'jeantituana@gmail.com', 'jean.tituana@epn.edu.ec'] as $recipient) {
+        foreach (['prueba1web@outlook.com'] as $recipient) {
             Mail::to($recipient)->queue(new MensajeCorreoRecibido($mensaje));
         }
 
